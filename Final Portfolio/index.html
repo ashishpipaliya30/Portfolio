@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/Style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navbar-logo">
+        <a href="#">ASHISH</a>
+      </div>
+      <div class="navbar-right" id="navbarOptions">
+        <a href="#" onclick="scrollToSection('home-section')">Home</a>
+        <a href="#" onclick="scrollToSection('about-me-section')">About</a>
+        <a href="#" onclick="scrollToSection('contact-section')">Contact</a>
+      </div>
+      <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    </div>
+
+    <div class="personal-info" id="home-section">
+      <div class="photo">
+        <img src="img/Ashish.jpeg" alt="Your Name" />
+      </div>
+      <div class="details">
+        <h1>ASHISH PIPALIYA</h1>
+        <p id="front">FRONTEND DEVELOPER</p>
+        <p>
+          I AM A WEB DEVELOPER WHO LOVES CREATING AWESOME WEBSITES USING HTML,
+          CSS, AND REACT JS.
+        </p>
+      </div>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <div class="my-skills">
+      <h2>My Skills</h2>
+      <div class="skill-bar">
+        <div class="skill-label">HTML</div>
+        <div class="skill-progress">
+          <div class="skill-html"></div>
+        </div>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-label">CSS</div>
+        <div class="skill-progress">
+          <div class="skill-css"></div>
+        </div>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-label">React Js</div>
+        <div class="skill-progress">
+          <div class="skill-react"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <div class="about-me" id="about-me-section">
+      <div class="about-me-text">
+        <h1>About Me</h1>
+        <h2 id="hii">Hii,</h2>
+        <p>
+          I'm Ashish Pipaliya <br />
+          I make websites look good and work smoothly. Using HTML, CSS, and
+          React Js, I turn designs into user-friendly web experiences. <br />
+          Always staying on top of the latest trends in web development. I am
+          always looking for a new projects. <br />
+          I like making things look good and work well. I'm always learning and
+          ready to make your online stuff awesome! I enjoy making them look good
+          and work smoothly
+        </p>
+      </div>
+      <div class="about-me-img">
+        <img src="img/Ashish1.jpg" alt="Your Image" />
+      </div>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <div class="contact" id="contact-section">
+      <h2>Contact With Me</h2>
+      <ul class="contact-icons">
+        <li>
+          <a href="mailto:ashishpipaliya30@gamil.com" target="_blank"
+            ><i class="fas fa-envelope"></i>
+            <img id="mail" src="img/mail1.gif" alt=""
+          /></a>
+        </li>
+        <li>
+          <a href="https://github.com/ashishpipaliya30" target="_blank"
+            ><i class="fab fa-github"></i>
+            <img id="github" src="img/github.png" alt=""
+          /></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/ashishpipaliy15" target="_blank"
+            ><i class="fab fa-twitter"></i>
+            <img id="twitter" src="img/twitter.jpg" alt=""
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/ashish.pipaliya.1/" target="_blank"
+            ><i class="fab fa-instagram"></i>
+            <img id="insta" src="img/instagram.png" alt=""
+          /></a>
+        </li>
+      </ul>
+    </div>
+
+    <button id="scroll-to-top-btn" onclick="scrollToTop()">↑</button>
+
+    <script>
+      function toggleMenu() {
+        var x = document.getElementById("navbarOptions");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        var btn = document.getElementById("scroll-to-top-btn");
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          btn.style.display = "block";
+        } else {
+          btn.style.display = "none";
+        }
+      }
+
+      function toggleMenu() {
+        var x = document.getElementById("navbarOptions");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+
+      function scrollToSection(sectionId) {
+        var section = document.getElementById(sectionId);
+        var offset =
+          section.offsetTop - (window.innerHeight - section.offsetHeight) / 2;
+
+        window.scrollTo({
+          top: offset,
+          behavior: "smooth",
+        });
+
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      var x = document.getElementById("navbarOptions");
+        x.style.display = "none";
+      }
+
+      function scrollToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+
+    </script>
+  </body>
+</html>
