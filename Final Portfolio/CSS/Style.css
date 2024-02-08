@@ -1,5 +1,9 @@
 body {
   margin: 0;
+  background-image: url(img/background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   font-family: Arial, sans-serif;
 }
 
@@ -88,11 +92,32 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   align-items: center;
   padding: 20px;
-  background-color: #9cf2f8;
+  background: rgba(7, 252, 236, 0.5);
   border-radius: 15px;
-  border: 1px solid black;
+  border-style: solid;
+  border-width: 4px;
+  border-color: red green blue yellow darkorchid violet;
+  animation: rotateBorder 3s linear infinite;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.597); /* Adding a subtle box shadow */
-  margin-top: 45px; 
+  margin-top: 45px;
+}
+
+@keyframes rotateBorder {
+  0% {
+    border-color: red green blue yellow; /* Specify initial colors for top, right, bottom, left */
+  }
+  25% {
+    border-color: yellow blue red green; /* Specify colors for top, right, bottom, left after 25% of animation */
+  }
+  50% {
+    border-color: green red yellow blue; /* Specify colors for top, right, bottom, left after 50% of animation */
+  }
+  75% {
+    border-color: blue yellow green red; /* Specify colors for top, right, bottom, left after 75% of animation */
+  }
+  100% {
+    border-color: red green blue yellow; /* Specify colors for top, right, bottom, left after 100% of animation */
+  }
 }
 
 .photo img {
@@ -101,8 +126,9 @@ body::-webkit-scrollbar-thumb {
   height: 270px;
   object-fit: cover;
   margin-right: 30px;
-  border: 1px solid black;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.414);
+  border: 2px solid black;
+  border-radius: 140px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.414);
 }
 
 .details {
@@ -116,7 +142,7 @@ h2 {
   margin-bottom: 8px;
 }
 
-#hii{
+#hii {
   font-size: 35px;
 }
 
@@ -125,7 +151,7 @@ h2 {
 }
 
 p {
-  color: #555;
+  color: #343131;
   font-size: 20px; /* Adjusted font size for better readability */
   line-height: 1.5; /* Improved line spacing */
   margin-bottom: 12px;
@@ -169,14 +195,35 @@ p {
 /* My Skill Section */
 .my-skills {
   margin: 30px 0;
-  background-color: #9cf2f8;
+  background: rgba(7, 252, 236, 0.5);
   border-radius: 15px;
-  border: 1px solid black;
+  border-width: 4px;
+  border-style: solid;
+  border-color: red green blue yellow darkorchid violet;
+  animation: rotate 3s linear infinite;
   height: 215px;
   text-align: center;
   padding-top: 15px;
   margin-top: 50px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.542);
+}
+
+@keyframes rotate {
+  0% {
+    border-color: red green blue yellow; /* Specify initial colors for top, right, bottom, left */
+  }
+  25% {
+    border-color: yellow blue red green; /* Specify colors for top, right, bottom, left after 25% of animation */
+  }
+  50% {
+    border-color: green red yellow blue; /* Specify colors for top, right, bottom, left after 50% of animation */
+  }
+  75% {
+    border-color: blue yellow green red; /* Specify colors for top, right, bottom, left after 75% of animation */
+  }
+  100% {
+    border-color: red green blue yellow; /* Specify colors for top, right, bottom, left after 100% of animation */
+  }
 }
 
 .my-skills h2 {
@@ -239,15 +286,36 @@ p {
 /* About me section */
 .about-me {
   color: white;
-  background-color: #9cf2f8;
+  background: rgba(7, 252, 236, 0.5);
   border-radius: 15px;
-  border: 1px solid black;
+  border-width: 4px;
+  border-style: solid;
+  border-color: red green blue yellow darkorchid violet;
+  animation: rotate 3s linear infinite;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
   margin-top: 50px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.414);
+}
+
+@keyframes rotate {
+  0% {
+    border-color: red green blue yellow; /* Specify initial colors for top, right, bottom, left */
+  }
+  25% {
+    border-color: yellow blue red green; /* Specify colors for top, right, bottom, left after 25% of animation */
+  }
+  50% {
+    border-color: green red yellow blue; /* Specify colors for top, right, bottom, left after 50% of animation */
+  }
+  75% {
+    border-color: blue yellow green red; /* Specify colors for top, right, bottom, left after 75% of animation */
+  }
+  100% {
+    border-color: red green blue yellow; /* Specify colors for top, right, bottom, left after 100% of animation */
+  }
 }
 
 .about-me-text {
@@ -267,7 +335,7 @@ p {
   width: 300px;
   height: 300px;
   border-radius: 190px;
-  border: 1px solid black;
+  border: 2px solid black;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.414);
 }
 
@@ -308,10 +376,12 @@ p {
 
 /* Contact us section */
 .contact {
-  background: url("img/bg1.avif") center/cover no-repeat;
-  background-size: cover;
+  background: rgba(7, 252, 236, 0.5);
   color: white;
-  border: 1px solid black;
+  border-width: 4px;
+  border-style: solid;
+  border-color: red green blue yellow darkorchid violet;
+  animation: rotate 3s linear infinite;
   border-radius: 15px;
   padding: 40px;
   margin-top: 50px;
@@ -320,8 +390,25 @@ p {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  border: 1px solid black;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.414);
+}
+
+@keyframes rotate {
+  0% {
+    border-color: red green blue yellow; /* Specify initial colors for top, right, bottom, left */
+  }
+  25% {
+    border-color: yellow blue red green; /* Specify colors for top, right, bottom, left after 25% of animation */
+  }
+  50% {
+    border-color: green red yellow blue; /* Specify colors for top, right, bottom, left after 50% of animation */
+  }
+  75% {
+    border-color: blue yellow green red; /* Specify colors for top, right, bottom, left after 75% of animation */
+  }
+  100% {
+    border-color: red green blue yellow; /* Specify colors for top, right, bottom, left after 100% of animation */
+  }
 }
 
 .contact h2 {
@@ -388,7 +475,6 @@ p {
   margin-bottom: -20px;
   border-radius: 20px;
 }
-
 
 /* scroll-to-top-button */
 #scroll-to-top-btn {
