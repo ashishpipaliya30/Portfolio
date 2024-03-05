@@ -412,19 +412,6 @@ p {
   margin: 10px;
 }
 
-/* .contact-icons a {
-  color: #fff;
-  text-decoration: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: color 0.3s ease-in-out;
-} */
-
-/* .contact-icons a:hover {
-  color: #ffd700;
-} */
-
 .contact-icons img {
   width: 100%; /* Set width to 100% for responsiveness */
   width: 50px; /* Set max-width to limit size on larger screens */
