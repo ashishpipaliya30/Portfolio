@@ -1,9 +1,5 @@
 body {
   margin: 0;
-  /* background-image: url(https://e1.pxfuel.com/desktop-wallpaper/776/791/desktop-wallpaper-blue-plain-light-color-plain-colors.jpg);
-  background-size: cover;
-  background-position: center; */
-  /* background-attachment: fixed; */
   background-color: #ffdab9;
   font-family: Arial, sans-serif;
 }
@@ -380,13 +376,10 @@ p {
 
 /* Contact us section */
 .contact {
-  /* background: rgba(7, 252, 236, 0.5); */
-  background-color:  #e2f1e2;
+  background: url(img/bg1.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
   color: white;
-  border-width: 4px;
-  border-style: solid;
-  border-color: red green blue yellow darkorchid violet;
-  animation: rotate 3s linear infinite;
   border-radius: 15px;
   padding: 40px;
   margin-top: 50px;
@@ -396,24 +389,6 @@ p {
   align-items: center;
   text-align: center;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.414);
-}
-
-@keyframes rotate {
-  0% {
-    border-color: red green blue yellow; /* Specify initial colors for top, right, bottom, left */
-  }
-  25% {
-    border-color: yellow blue red green; /* Specify colors for top, right, bottom, left after 25% of animation */
-  }
-  50% {
-    border-color: green red yellow blue; /* Specify colors for top, right, bottom, left after 50% of animation */
-  }
-  75% {
-    border-color: blue yellow green red; /* Specify colors for top, right, bottom, left after 75% of animation */
-  }
-  100% {
-    border-color: red green blue yellow; /* Specify colors for top, right, bottom, left after 100% of animation */
-  }
 }
 
 .contact h2 {
@@ -437,18 +412,18 @@ p {
   margin: 10px;
 }
 
-.contact-icons a {
+/* .contact-icons a {
   color: #fff;
   text-decoration: none;
   display: flex;
   flex-direction: column;
   align-items: center;
   transition: color 0.3s ease-in-out;
-}
+} */
 
-.contact-icons a:hover {
+/* .contact-icons a:hover {
   color: #ffd700;
-}
+} */
 
 .contact-icons img {
   width: 100%; /* Set width to 100% for responsiveness */
